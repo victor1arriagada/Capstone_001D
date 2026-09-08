@@ -124,24 +124,6 @@ La arquitectura contempla radiofrecuencia confinada en túneles y transporte óp
 
 ---
 
-# 🔐 Seguridad y segmentación IT/OT
-
-Uno de los aspectos fundamentales del proyecto es mantener una separación entre las redes destinadas a usuarios y las redes utilizadas por los sistemas críticos del Metro.
-
-La propuesta considera:
-
-* VLANs.
-* VRFs.
-* Separación física de enlaces.
-* Fibra oscura exclusiva para OT.
-* Aislamiento de redes críticas.
-* Controles de seguridad basados en **IEC 62443**.
-* Ausencia de enrutamiento directo hacia la red CBTC.
-
-Esto busca evitar que una eventual incidencia en la red pública pueda afectar los sistemas relacionados con la operación ferroviaria.
-
----
-
 # ⚠️ Riesgos principales
 
 | Riesgo                                                     | Nivel      | Mitigación                                                                       |
@@ -170,13 +152,6 @@ El proyecto se divide en distintas áreas de trabajo:
 * Cable Radiante.
 * DAS.
 
-### 🔐 Ciberseguridad
-
-* Segmentación IT/OT.
-* Protección de redes críticas.
-* Implementación de principios asociados a IEC 62443.
-
----
 
 # 🔧 Etapas del proyecto
 
@@ -201,24 +176,6 @@ Diseño de:
 ## 4. Seguridad e integración
 
 Implementación del aislamiento IT/OT y mecanismos de redundancia de red.
-
----
-
-# 📊 Competencias desarrolladas
-
-El proyecto permite aplicar competencias relacionadas con:
-
-### 🔌 Redes y transporte óptico
-
-Diseño de arquitecturas de transporte y redes ópticas de alta capacidad y disponibilidad.
-
-### 📡 Comunicaciones inalámbricas
-
-Planificación e implementación de sistemas RF y conectividad inalámbrica en ambientes confinados.
-
-### 🛡️ Ciberseguridad
-
-Diseño de esquemas de seguridad y segmentación de tráfico utilizando estándares de la industria.
 
 ---
 
@@ -268,38 +225,3 @@ Las principales evidencias comprometidas son:
 **Docente:** Claudia Gabriela Reinoso Hurtado
 
 ---
-
-# 🏫 Contexto académico
-
-Este proyecto corresponde al desarrollo de una propuesta tecnológica aplicada al ámbito de las **telecomunicaciones, redes ópticas, comunicaciones móviles y ciberseguridad industrial**, utilizando como escenario la futura Línea 9 del Metro de Santiago.
-
-El trabajo busca integrar conocimientos de infraestructura de redes, RF, transporte óptico y seguridad para resolver un problema de conectividad en un entorno subterráneo de alta complejidad.
-
----
-
-# 🚀 Próximos pasos
-
-Las siguientes etapas contemplan avanzar hacia:
-
-* 📐 Diseño detallado de la arquitectura.
-* 📡 Cálculos de cobertura RF.
-* 🔌 Dimensionamiento del backbone óptico.
-* 📊 Elaboración de *Link Budget* RF y óptico.
-* 🗺️ Desarrollo de diagramas físicos y lógicos.
-* 🔐 Definición de la segmentación IT/OT.
-* 🧪 Modelamiento y validación de la solución.
-* 📄 Consolidación del informe técnico.
-
----
-
-## 📚 Tecnologías y conceptos
-
-`5G` `4G` `DAS` `Leaky Feeder` `RF` `Fibra Óptica OS2` `10G` `40G` `Backbone` `QoS` `VLAN` `VRF` `IT/OT` `IEC 62443` `CBTC` `Metro` `Telecomunicaciones`
-
----
-
-## ⭐ Proyecto Capstone
-
-**Diseño de infraestructura de telecomunicaciones subterránea para la Línea 9 del Metro de Santiago.**
-
-> Conectividad continua, alta disponibilidad y seguridad para un entorno ferroviario de misión crítica.
