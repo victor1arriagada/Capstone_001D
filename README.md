@@ -227,8 +227,6 @@ La planificación base del equipo cubre el período **agosto–diciembre de 2026
 | 16 | Preparación de defensa | 23–29 nov |
 | 17 | Defensa final (según planificación original) | 30 nov–6 dic |
 
-> Las fechas anteriores corresponden a la **Carta Gantt original de la presentación EV3**. Los estados de avance deben actualizarse a partir de la evidencia real de cada actividad; no se declara automáticamente un 100 % de cumplimiento.
-
 ## 📂 Entregables técnicos
 
 | Entregable | Contenido | Estado de trabajo |
@@ -240,26 +238,6 @@ La planificación base del equipo cubre el período **agosto–diciembre de 2026
 | **Matriz SLA** | Indicadores, metas, pruebas y escenarios analíticos | Matriz desarrollada; mediciones pendientes |
 | **Simulación Packet Tracer** | Topología L3, conectividad, rutas y segmentación | En elaboración / incorporar archivo `.pkt` |
 | **Presentación Capstone** | Diseño, cálculos, planificación y evidencias | Presentación desarrollada |
-
-### Organización sugerida del repositorio
-
-```text
-Linea9-NeutralHost/
-├── README.md
-├── documentos/
-│   └── Presentacion_Capstone.pptx
-├── calculos/
-│   └── Dimensionamiento_5G_Linea_9.xlsx
-├── seguridad/
-│   └── Matriz_Seguridad_VLAN_Operadores.xlsx
-├── sla/
-│   └── Matriz_SLA_Linea9.xlsx
-└── simulacion/
-    ├── Linea9_NeutralHost.pkt
-    └── evidencias/
-```
-
-*Estructura recomendada: los archivos y carpetas deben cargarse al repositorio para activar sus enlaces; los nombres pueden adaptarse a la entrega final.*
 
 ## 🧪 Validación y límites del diseño
 
