@@ -227,6 +227,9 @@ La planificación base del equipo cubre el período **agosto–diciembre de 2026
 | 16 | Preparación de defensa | 23–29 nov |
 | 17 | Defensa final (según planificación original) | 30 nov–6 dic |
 
+## Video Fase 3
+https://drive.google.com/file/d/1jxCe6W3yfij-9ZyhvdQ_VfNlJ9Ykfqhn/view?usp=drive_link
+
 ## 📂 Entregables técnicos
 
 | Entregable | Contenido | Estado de trabajo |
