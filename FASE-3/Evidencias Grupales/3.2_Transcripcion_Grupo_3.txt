@@ -1,27 +1,27 @@
-[00:00:05.04] - Hablante 1
+[00:00:05 - 00:01:21] - Hablante 1: Sebastián Jara
 Buenas tardes a los docentes de la comisión. Con mi grupo, que lo conforma Martín Devia, Emilio Yáñez y Víctor Arriagada, y quien les habla, Sebastián Jara, presentaremos nuestro proyecto de título Conectividad Total 5G de la Línea del Metro. Actualmente, los sistemas de transportes subterráneos enfrentan un desafío crítico. De la ingeniería de telecomunicaciones. La estructura de hormigón armado y acero de los túneles actúa como una jaula de Faraday que provoca una severa atenuación electromagnética. Todo esto se le suma el desplazamiento de trenes a aproximadamente unos 80 kilómetros por hora. Esto también genera un efecto llamado Doppler en la banda de 3.5 GHz y fallos constantes del handover en las celdas para los pasajeros. Nuestro proyecto busca resolver esta brecha diseñando una infraestructura subterránea de alta disponibilidad para toda la Línea 9. Para lograrlo, proponemos una arquitectura neutral host bajo el estándar multioperador Core Network, todo esto integrando 5G standalone sobre una única infraestructura física compartida. De esta forma, entregaremos un acceso único, simultáneo, aislado para Entel, Movistar, Claro y Wom, optimizando el uso del espectro y el espacio técnico de los túneles y con el consumo energético.
 
-[00:01:26.18] - Hablante 2
+[00:01:26 - 00:02:20] - Hablante 2: Martín Devia
 Consolidamos nuestra solución en 4 entregables técnicos integrados. En el primer entregable, que es la capa física y radiofrecuencia, desplegamos un sistema DAS activo que es multivibrador, junto a puntos de acceso en estaciones y andenes para soportar la alta densidad de dispositivos concurrentes. En los túneles implementamos el cable radiante o bien Licky Feeder, que se le va a llamar, que este mismo interconecta mediante un backbone redundante en anillo de fibra óptica monomodo OS2 a 10 y 40 Gbps. Dado que la Línea 9 aún se encuentra en etapa diseño, aclaramos que nuestros resultados de radiofrecuencia no provienen de mediciones comerciales externas, sino de modelamiento propio de LinkBudget, que proyecta cobertura continua superior o igual a -75 dB/min. A 80 kilómetros por hora.
 
-[00:02:25.04] - Hablante 3
+[00:02:25 - 00:03:50] - Hablante 3: Emilio Yáñez
 En el segundo entregable que tenemos que demostrar, la arquitectura lógica de toda nuestra red, lo que hicimos fue segmentar la red mediante VLANs. Tal como indica la diapositiva, tenemos VLAN 10, 20, 30, 40 y 50 para aislar lo que serían los proveedores de internet, en este caso Entel, Movistar, Claro y Wom. Y también contamos con el DNS de Google, el 8.8.8.8 y el 8.8.4.4. Va a estar todo esto operando sobre una arquitectura virtualizada C-RAN. Tendremos en cada acceso de las estaciones de metro switches de distribución. En este caso, nosotros como equipo vamos a presentarles una demostración simplemente de 3 estaciones de metro, ya que nos parece pertinente para que entiendan cómo es que va a funcionar a lo largo de todas las redes de la Línea 9. Pero para este caso simulamos solamente en 3 estaciones. También tendremos access point en modo acceso subiendo por enlaces troncales hacia los switches de distribución de enrutamiento y los routers Core 1 y 2, donde el HSRP provee puertas de enlace virtuales con enrutamiento estático hasta los operadores y salida externa. Todo esto lo complementaremos con la calidad de servicio y el monitoreo y priorizando tráfico crítico mediante SNMP y Savix.
 
-[00:03:51.21] - Hablante 3
+[00:03:51 - 00:04:06] - Hablante 3: Emilio Yáñez
 Y también todo esto estará regido bajo un marco de ciberseguridad, la norma IEC 62443, en donde establecemos zonas y ACLs que aíslan completamente las redes públicas de las redes privadas, y así hasta los proveedores nunca se tocan entre ellos.
 
-[00:04:11.14] - Hablante 2
+[00:04:11 - 00:04:55] - Hablante 2: Martín Devia
 Al contrastar los objetivos esperados frente a los resultados obtenidos en nuestro diseño y simulación, cumplimos el 100% de las metas. Primero, en cuanto a la cobertura de radiofrecuencia, proyectamos -68 dB/min promedio frente al mínimo de -75 dB/min. Segundo, logramos un 100% de aislamiento entre operadores y dominios IT OT. Tercero, alcanzamos conmutación HSRP bajo 3 segundos para cumplir la disponibilidad del 99,999%. Y como último, el cuarto, nuestro modelo Neutral Host logra un 64% de ahorro en CAPEX, superando la meta propuesta del 60%.
 
-[00:05:04.07] - Hablante 3
+[00:05:04 - 00:05:42] - Hablante 3: Emilio Yáñez
 De esta forma damos por cumplimiento íntegro a todos los indicadores de calidad, ya sea de nuestro perfil de egreso, en donde contabilizamos los servicios de virtualización, conmutación redundante de los switches de distribución y HSRP, una gestión proactiva mediante cual calidad de servicio SNMP y Savix y monitoreo constante. Protección de la infraestructura mediante la norma IEC 62443. Y a continuación, para respaldar todo lo que ya hemos hablado, Víctor nos va a mostrar el funcionamiento en tiempo real de cómo sería esto.
 
-[00:05:43.27] - Hablante 4
+[00:05:43 - 00:07:15] - Hablante 4: Víctor Arriagada 
 En la demostración hecha por Packet Tracer, acá podemos ver la topología de la red donde ya le había explicado a mi compañero anteriormente, donde tenemos el ISP que vendría siendo de, o sea, perdón, los 4 ISPs diferentes donde todos deben salir a internet. Y los hosts en este caso no se deben comunicar con los de la otra compañía. Vamos a realizar las pruebas donde, por ejemplo, podemos tomar el host de Entel donde tiene que comunicarse con el otro de Entel. Vamos a ver que va a realizar el ping de manera exitosa. Y ahora vamos a comprobar si llegará a Claro. Que es la otra vlan, y vamos a ver que no puede llegar. Voy a adelantar un poco el tiempo y no va a llegar. La prueba siguiente que debemos hacer es realizar una búsqueda por internet a través de Host de Claro, que deberíamos llegar a Google, y acá se puede ver que llegamos a internet de manera exitosa. Además, se nos pide que realicemos una conectividad a internet y que esta no falle a la hora de caerse un enlace. Con esto vamos a probar el protocolo HSRP de la siguiente manera. Vamos a ir al CORE1, que sería el router principal.
 
-[00:07:16.23] - Hablante 4
+[00:07:16 - 00:08:17] - Hablante 4: Víctor Arriagada
 Acá está. Vamos a botar la puerta y vamos a ver que vamos a perder un paquete acá. Es un poco, ahí se perdió, y automáticamente salió el paquete hacia el core 2, que lo toma como respaldo. Aquí podemos ver que funciona el HSRP. Volvemos a levantar la puerta y acá debería informarnos el estado del router. Esperemos un poquito. Ahí está, que volvió a pasar a activo, ya que core 1 es el activo principal y core 2 vendría siendo el respaldo. Y así funcionaría de manera exitosa la red 5G de nuestro proyecto.
 
-[00:08:25.23] - Hablante 1
+[00:08:25 - 00:08:48] - Hablante 1: Sebastián Jara
 Bueno, para cerrar, como grupo concluimos en puntos financieros importantes, logrando un 64% de ahorro en CAPEX al unir una infraestructura para 4 operadores. También logramos un menor OPEX anual y un 100% de resiliencia failover HSRP, el cual está validado en el Packet Tracer. Muchas gracias por su atención.
 
